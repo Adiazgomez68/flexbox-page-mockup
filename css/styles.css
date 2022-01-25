@@ -1,5 +1,6 @@
 @import url(flex-header.css);
 @import url(flex-container.css);
+@import url(flex-footer.css);
 
 * {
     margin: 0;
