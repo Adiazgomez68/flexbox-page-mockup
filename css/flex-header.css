@@ -22,6 +22,9 @@ li:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    box-shadow: 1px 1px 10px rgb(104, 104, 104);
     background:rgb(22, 102, 156);
 }
 
@@ -48,4 +51,28 @@ li:hover {
     width: 200px;
 }
 
+/* -------------- TABLET DESIGN ------------- */
 
+@media (min-width: 768px) {
+    li {
+        font-size: 18px;
+    }
+    
+    .flex-header h1 {
+        margin: 20px;
+        font-size: 40px;
+    }
+}
+
+/* -------------- MOBILE DESIGN ------------- */
+
+@media (min-width: 1024px) {
+    .flex-header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .flex-header nav {
+        width: 40%;
+        margin-right: 20px;
+    }
+}

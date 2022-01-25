@@ -18,9 +18,27 @@
     display: flex;
     justify-content: space-around;
     margin: 0 15px 15px 15px;
-    width: 70%;
+    width: 58%;
 }
 
 #ul-1 li, #ul-2 li {
     width: 200px;
 }
+
+/* ---------- TABLET DESIGN ------------- */
+
+@media (min-width: 768px) {
+    .flex-footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .flex-footer #ul-1 {
+        width: 50%;
+    }
+    .flex-footer #ul-2 {
+        width: 28%;
+        margin: 15px;
+    }
+}
+
