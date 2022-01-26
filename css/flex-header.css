@@ -64,7 +64,7 @@ li:hover {
     }
 }
 
-/* -------------- MOBILE DESIGN ------------- */
+/* -------------- WEB DESIGN ------------- */
 
 @media (min-width: 1024px) {
     .flex-header {
@@ -73,6 +73,11 @@ li:hover {
     }
     .flex-header nav {
         width: 40%;
+        height: 50px;
         margin-right: 20px;
+    }
+
+    .flex-header nav ul li {
+        padding: 14px;
     }
 }

@@ -42,3 +42,26 @@
     }
 }
 
+/* ---------- WEB DESIGN ------------- */
+
+@media (min-width: 1024px) {
+    .flex-footer li {
+        padding: 14px;
+    }
+
+    .flex-footer {
+        height: 90px;
+    }
+
+    .flex-footer #ul-1 {
+        width: 37%;
+        height: 50px;
+        align-items: center;
+    }
+    .flex-footer #ul-2 {
+        width: 23%;
+        height: 50px;
+        margin: 15px;
+        align-items: center;
+    }
+}

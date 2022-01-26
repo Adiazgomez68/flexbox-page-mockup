@@ -5,6 +5,12 @@
     padding-top: 96px;
 }
 
+.flex-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .flex-container hr {
     width: 86%;
 }
@@ -71,29 +77,30 @@
     }
 }
 
-/* -------------- MOBILE DESIGN ------------- */
+/* -------------- WEB DESIGN ------------- */
 
 @media (min-width: 1024px) {
     .flex-container {
-        padding-top: 100px;
+        padding-top: 87px;
         flex-direction: row;
-        flex-wrap: wrap;
+        align-items: stretch;
+    }
+    
+    .flex-container hr, .section-1, .section-2 {
+        width: 96%;
+        margin-top: 20px;
     }
 
-    .flex-container hr {
-        width: 50%;
-        margin-left: 20px;
+    .section-1 h1, .section-2 h1 {
+        font-size: 30px;
     }
-
-    .section-1, .section-2 {
-        width: 50%;
+    .section-1 p, .section-2 p {
+        font-size: 20px;
     }
 
     .flex-aside {
         flex-direction: column;
-        width: 30%;
         height: 500px;
-        /* height: 300px; */
     }
     .flex-aside #div-2 {
         margin: 0 20px 20px 20px;
