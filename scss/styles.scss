@@ -15,13 +15,13 @@ ul {
         padding: 10px;
         text-align: center;
         color: white;
-        font-family: Calibri;
-    }
+        font-family: $font1;
 
-    &:hover {
-        background: white;
-        color: rgb(44, 44, 44);
-        cursor: pointer;
-        font-weight: bold;
+        &:hover {
+            background: white;
+            color: rgb(44, 44, 44);
+            cursor: pointer;
+            font-weight: bold;
+        }
     }
 }

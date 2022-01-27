@@ -1,24 +1,26 @@
+@import "../base";
+
 .flex-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 96px;
 
-    hr {
-        width: 86%;
-    }
-
     .flex-article {
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        hr {
+            width: 86%;
+        }
 
         .section-1, .section-2 {
             width: 86%;
             display: flex;
             flex-direction: column;
             padding: 20px;
-            font-family:calibri;
+            font-family: $font1;
         }
 
         .section-2 {
@@ -33,20 +35,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 500px;
-    width: 100%;
-    background: rgb(194, 38, 71);
+    @include dinamyc-Width-Height(100%, 500px); 
+    background: $color3;
 
     div {
-        height: 250px;
-        width: 90%;
+        @include dinamyc-Width-Height(90%, 250px); 
         margin: 20px;
-        background: rgb(245, 54, 95);
+        background: $color4;
         transition: .3s ease;
-    }
 
-    &:hover {
-        box-shadow: rgb(122, 27, 48) 1px 1px 15px;
+        &:hover {
+            box-shadow: $color5 1px 1px 15px;
+        }
     }
 
     #div-2 {
@@ -61,12 +61,7 @@
     .flex-container {
         padding-top: 130px;
 
-        .section-1 {
-            h1 {font-size: 25px;}
-            p {font-size: 18px;}
-        }
-
-        .section-2 {
+        .section-1, .section-2 {
             h1 {font-size: 25px;}
             p {font-size: 18px;}
         }
@@ -95,15 +90,7 @@
             margin-top: 20px;
         }
 
-        .section-1 {
-            width: 96%;
-            margin-top: 20px;
-
-            h1 {font-size: 30px;}
-            p {font-size: 20px;}
-        }
-
-        .section-2 {
+        .section-1, .section-2 {
             width: 96%;
             margin-top: 20px;
 

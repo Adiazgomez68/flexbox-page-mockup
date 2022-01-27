@@ -5,3 +5,13 @@ $color2: rgb(48, 63, 85);
 $color3: rgb(194, 38, 71);
 $color4: rgb(245, 54, 95);
 $color5: rgb(122, 27, 48); 
+
+$font1: Calibri;
+$font2: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+// Mixin
+
+@mixin dinamyc-Width-Height($width, $height) {
+    width: $width;
+    height: $height;
+}
