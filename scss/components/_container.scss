@@ -1,0 +1,110 @@
+@import "../base";
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 96px;
+
+    .flex-article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        hr {
+            width: 86%;
+        }
+
+        .section-1, .section-2 {
+            width: 86%;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            font-family: $font1;
+        }
+
+        .section-2 {
+            padding-top: 0;
+        }
+    }
+}
+
+/* ------------------------------------------------------ */
+
+.flex-aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include dinamyc-Width-Height(100%, 500px); 
+    background: $color3;
+
+    div {
+        @include dinamyc-Width-Height(90%, 250px); 
+        margin: 20px;
+        background: $color4;
+        transition: .3s ease;
+
+        &:hover {
+            box-shadow: $color5 1px 1px 15px;
+        }
+    }
+
+    #div-2 {
+        margin-top: 0;
+    }
+
+}
+
+/* -------------- TABLET DESIGN ------------- */
+
+@media (min-width: 768px) {
+    .flex-container {
+        padding-top: 130px;
+
+        .section-1, .section-2 {
+            h1 {font-size: 25px;}
+            p {font-size: 18px;}
+        }
+    }
+
+    .flex-aside {
+        flex-direction: row;
+        height: 300px;
+
+        #div-2 {
+            margin: 20px 20px 20px 0;
+        }
+    }
+}
+
+/* -------------- WEB DESIGN ------------- */
+
+@media (min-width: 1024px) {
+    .flex-container {
+        padding-top: 87px;
+        flex-direction: row;
+        align-items: stretch;
+
+        hr {
+            width: 96%;
+            margin-top: 20px;
+        }
+
+        .section-1, .section-2 {
+            width: 96%;
+            margin-top: 20px;
+
+            h1 {font-size: 30px;}
+            p {font-size: 20px;}
+        }
+    }
+    
+    .flex-aside {
+        flex-direction: column;
+        height: 500px;
+
+        #div-2 {
+            margin: 0 20px 20px 20px;
+        }
+    }
+}

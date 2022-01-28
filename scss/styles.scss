@@ -1,0 +1,27 @@
+@import "components/header";
+@import "components/container";
+@import "components/footer";
+
+* {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 8px;
+    padding: 0;
+
+    li {
+        padding: 10px;
+        text-align: center;
+        color: white;
+        font-family: $font1;
+
+        &:hover {
+            background: white;
+            color: rgb(44, 44, 44);
+            cursor: pointer;
+            font-weight: bold;
+        }
+    }
+}
